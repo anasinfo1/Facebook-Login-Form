@@ -1,0 +1,598 @@
+*{
+	padding: 0;
+	margin: 0;
+	scroll-behavior: smooth;
+	font-family: cairo;
+}
+
+body{
+ background-color: rgba(211, 210, 210, 0.7);
+}
+
+/* PAGE HEADER STYLE */
+
+header{
+	background-color: royalblue;
+	width: 100%;
+
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	padding: 5px 30px;
+	align-items: center;
+	transition: 0.7s ease;
+}
+
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	margin-left: 15px;
+}
+
+
+nav ul li a{
+	text-decoration: none;
+	color: white;
+	transition: 0.7s ease;
+}
+
+.logo{
+	text-decoration: none;
+	color: white;
+	font-size: 25px;
+	font-weight: 700;
+}
+
+nav ul li a:hover{
+ color: orangered;
+}
+
+nav:hover{
+background-color: black;
+}
+
+
+/* PAGE BODY STYLE */
+
+
+.container{
+	margin-top: 100px;
+	margin-left: 30px;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+
+.container p{
+	line-height: 22px;
+	word-spacing: 1px;
+}
+
+.container h1{
+	color: royalblue;
+	font-size: 2.6em;
+	line-height: 60px;
+
+}
+
+.container .login{
+
+	
+	background-color: white;
+	width: 410px;
+	height: 300px;
+	padding-top: 15px;
+	border-radius: 8px;
+	box-shadow: 0 5px 5px rgba(1, 1, 1,10%);
+	line-height: 40px;
+
+
+
+}
+
+
+.container .form{
+	margin-right: 100px;
+	justify-content: center;
+	text-align: center;
+}
+
+
+.container .form h5{
+	margin-top: 16px;
+
+}
+
+.container .form .textpage{
+	font-weight: normal;
+}
+
+
+
+.login .email {
+	width: 370px;
+	height: 45px;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	border-width: 0.5px;
+	border-radius: 5px;
+	font-size: 15px;
+}
+
+.login .password{
+	width: 370px;
+	height: 45px;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	border-width: 0.5px;
+	border-radius: 5px;
+	font-size: 15px;
+
+}
+
+.login .loginbtn{
+	width: 380px;
+	height: 40px;
+	background-color: royalblue;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+
+
+
+.login a{
+	color: cornflowerblue;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+.login .btn{
+	margin-top: 30px;
+	width: 200px;
+	height: 40px;
+	background-color: limegreen;
+	color: white;
+	font-weight: bold;
+	font-size: 1em;
+	border-radius: 5px;
+	border: none;
+	transition: 0.7s ease;
+}
+
+
+.login .btn:hover{
+background-color: forestgreen;
+}
+
+
+
+
+
+hr{
+opacity: 50%;
+margin-top: 10px;
+display: flex;
+margin-left: 20px;
+width: 370px;
+}
+
+
+
+/* FOOTER */
+
+.fin{
+background-color: white;
+height: 150px;
+margin-top: 90px;
+width: 100%;
+}
+
+.fin p{
+text-align: center;
+padding: 20px;
+}
+
+.fin h3{
+	font-weight: normal;
+
+	font-size: 15px;
+	padding-bottom: -20px;
+	padding-left: 20px;
+
+
+}
+
+.fin h3 span{
+	font-weight: bold;
+	color: royalblue;
+}
+
+
+
+/* MEDIA QUERY */
+
+
+
+@media(max-width: 400px){
+	body{
+		font-size: 10px;
+	}
+
+	.container{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.container .form .login{
+	width: 300px;
+	}
+
+	.container .login .password{
+		width: 260px;
+	}
+
+	.container .login .email{
+		width: 260px;
+	}
+
+	.container .login .loginbtn{
+		width: 270px;
+	}
+
+
+	hr{
+	width: 250px;
+	}
+
+	.textheader{
+		margin-top: -70px;
+		text-align: center;
+		margin-left: 70px;
+		margin-bottom: 30px;
+	}
+	.textheader p{
+		line-height: 15px;
+	}
+	.textheader h1{
+line-height: 40px;
+	}
+
+	.fin h3{
+		font-size: 1em;
+		text-align: center;
+	}
+
+
+}
+
+@media(max-width: 820px){
+	.fin{
+		height: 170px;
+		margin-top: 500px;
+	}
+}
+
+@media(max-width: 768px){
+	.fin{
+		height: 170px;
+		margin-top: 230px;
+	}
+
+	.container{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-left: 80px;
+		margin-top: 150px;
+	}
+
+	.textheader{
+		margin-top: -70px;
+		text-align: center;
+		margin-right: 80px;
+		margin-bottom: 30px;
+	}
+
+
+}
+
+
+@media(max-width: 1280px){
+	.fin{
+		margin-top: 140px;
+	}
+}
+
+@media(max-width: 1024px){
+	.fin{
+		height: 170px;
+	}
+}
+
+
+@media(max-width: 412px){
+	nav ul li a{
+		font-size: 0.9em;
+	}
+
+	.container .form .login{
+		width: 360px;
+		margin-left: 20px;
+	}
+
+
+	.container .login .password{
+		width: 300px;
+	}
+
+	.container .login .email{
+		width: 300px;
+	}
+
+	.container .login .loginbtn{
+		width: 300px;
+	}
+
+	.fin{
+		height: 200px;
+	}
+
+}
+
+
+
+@media(max-width: 280px){
+	ul{
+		padding-left: 30px;
+	}
+
+	.container .form .login{
+		width: 250px;
+		margin-left: 20px;
+		height: 200px;
+	}
+
+
+	.container .login .password{
+		width: 220px;
+		font-size: 1.3em;
+	}
+
+	.container .login .email{
+		width: 220px;
+		font-size: 1.3em;
+	}
+
+	.container .login .loginbtn{
+		width: 230px;
+	}
+
+	.textheader{
+		margin-top: -100px;
+		text-align: center;
+		margin-right: 150px;
+		margin-bottom: 30px;
+	}
+
+	hr{
+		display: none;
+	}
+
+	.form .btn{
+		margin-top: 50px;
+	}
+
+
+	.container .textheader p{
+		font-size: 0.72em;
+	}
+	.container .textheader{
+		font-size: 15px;
+	}
+
+	.fin{
+		margin-top: 80px;
+		height: 140px;
+	}
+
+
+}
+
+@media(max-width: 390px){
+	.container .textheader{
+		margin-left: 0px;
+		font-size: 1.5em;
+	}
+	.container .textheader h1{
+		margin-bottom: 8px;
+	}
+
+	.container .textheader p{
+	 line-height: 18px;
+	}
+
+	nav ul li a{
+		font-size: 1.1em;
+	}
+
+	.container h5{
+		font-size: 1.1em;
+	}
+
+	.container .login{
+		font-size: 1.1em;
+	}
+
+	.container .form .login {
+		width: 340px;
+	}
+
+	.fin{
+		height: 140px;
+	}
+
+}
+
+@media(max-width: 399px){
+	.container .textheader{
+		margin-left: 0;
+	}
+
+	body{
+		font-size: 0.9em;
+	}
+
+}
+
+
+
+@media(max-width: 375px){
+	.textheader p{
+		font-size: 0.6em;
+	}
+	nav ul li a{
+		font-size: 0.8em;
+	}
+}
+
+@media(max-width: 414px){
+
+	.container .form .login{
+		width: 350px;
+		margin-left: 20px;
+		height: 300px;
+	}
+
+
+	.container .login .password{
+		width: 300px;
+		font-size: 1em;
+	}
+
+	.container .login .email{
+		width: 300px;
+		font-size: 1em;
+
+	}
+
+	.container .login .loginbtn{
+		width: 320px;
+	}
+
+hr{
+	width: 300px;
+}
+
+nav ul li a{
+font-size: 0.9em;
+}
+
+.fin{
+	height: 200px;
+}
+
+}
+
+
+@media(max-width: 390px){
+	.container p{
+		font-size: 0.7em;
+	}
+}
+
+
+@media(max-width: 280px){
+	body{
+		font-size: 9px;
+	}
+	.container .textheader{
+		margin-left: 70px;
+	}
+
+
+	.container .form .login{
+		width: 250px;
+		margin-left: 20px;
+		height: 200px;
+
+	}
+
+
+	.container .login .password{
+		width: 220px;
+		font-size: 1em;
+	}
+
+	.container .login .email{
+		width: 220px;
+		font-size: 1em;
+
+	}
+
+	.container .login .loginbtn{
+		width: 230px;
+	}
+
+hr{
+	display: none;
+}
+
+
+}
+
+
+@media(max-width: 357px){
+
+	body{
+		font-size: 12px;
+	}
+
+
+	.container .form .login{
+		width: 300px;
+		margin-left: 20px;
+		height: 200px;
+
+	}
+
+
+	.container .login .password{
+		width: 250px;
+		font-size: 1em;
+	}
+
+	.container .login .email{
+		width: 250px;
+		font-size: 1em;
+
+	}
+
+	.container .login .loginbtn{
+		width: 260px;
+	}
+
+hr{
+	display: none;
+}
+
+
+.container .form .login .btn{
+	margin-top: 60px;
+}
+
+
+
+
+}
+
+
+
+
